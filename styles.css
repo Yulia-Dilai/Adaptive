@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif 
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Section 1 */ 
+.quotes {
+    padding-top: 102px
+}
+
+.section_title {
+    font-weight: 700; 
+    font-size: 36px;
+    color: #648cff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 22px;
+}
+
+.section_text {
+    font-size: 18px;
+    color: #999999;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 117px;
+}
+
+.people1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 188px;
+}
+
+.people2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 147px;
+}
+
+.people_items {
+    width: 570px;
+    position: relative;
+}
+
+.people_items::after {
+    content: '"';
+    position: absolute;
+    top: -85px;
+    left: -15px;
+    font-size: 142px;
+    color: #648cff;
+    font-style: italic;
+}
+
+.people_items::before {
+    content: '"';
+    position: absolute;
+    bottom: -120px;
+    right: 15px;
+    font-size: 142px;
+    color: #648cff;
+    font-style: italic;
+}
+
+.people_items p{
+    font-size: 24px;
+    color: #353854;
+    padding-bottom: 24px;
+    text-align: justify;
+}
+
+.people_items h6{
+    font-size: 18px;
+    color: #b4b5bc;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .container {
+        padding: 0 15px; 
+    }
+
+    .section_title {
+        font-size: 28px; 
+        padding-bottom: 12px;
+    }
+
+    .section_text {
+        font-size: 16px; 
+        padding-bottom: 60px;
+    }
+
+    .people1, .people2 {
+        flex-direction: column; 
+    }
+
+    .people1{
+        padding-bottom: 60px;
+    }
+
+    .people2{
+        padding-bottom: 10px;
+    }
+
+    .people_items {
+        width: 100%; 
+        margin-bottom: 40px; 
+        position: relative;
+    }
+
+    .people_items::after, .people_items::before {
+        font-size: 60px; 
+    }
+
+    .people_items::after {
+        top: -20px; 
+        left: 0px;
+    }
+
+    .people_items::before {
+        bottom: -60px; 
+        right: 0px;
+    }
+
+    .people_items p {
+        font-size: 20px; 
+        text-align: left; 
+        padding-top: 20px; 
+    }
+
+    .people_items h6 {
+        font-size: 16px; 
+    }
+}
+
+
+
+
+
